@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/utils-inherited-property-descriptor",
+  "version": "0.0.0",
+  "description": "Return a property descriptor for an object's inherited property.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-inherited-property-descriptor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "object",
+    "obj",
+    "in",
+    "inherited",
+    "prototype",
+    "proto",
+    "property",
+    "prop",
+    "descriptor",
+    "desc"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
