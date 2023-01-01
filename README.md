@@ -24,23 +24,7 @@ limitations under the License.
 
 > Return a property descriptor for an object's inherited property.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-inherited-property-descriptor
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
@@ -48,8 +32,32 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 
 <!-- eslint-disable id-length -->
 
+To use in Observable,
+
 ```javascript
-var inheritedPropertyDescriptor = require( '@stdlib/utils-inherited-property-descriptor' );
+inheritedPropertyDescriptor = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-descriptor@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var inheritedPropertyDescriptor = require( 'path/to/vendor/umd/utils-inherited-property-descriptor/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-descriptor@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.inheritedPropertyDescriptor;
+})();
+</script>
 ```
 
 #### inheritedPropertyDescriptor( obj, property\[, level] )
@@ -117,9 +125,14 @@ var desc = inheritedPropertyDescriptor( f, 'beep', 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var defineProperty = require( '@stdlib/utils-define-property' );
-var inheritedPropertyDescriptor = require( '@stdlib/utils-inherited-property-descriptor' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-descriptor@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 function Foo() {
     this.beep = 'boop';
@@ -142,6 +155,11 @@ var desc = inheritedPropertyDescriptor( obj, 'foo' );
 
 console.log( desc );
 // => {'configurable':true,'enumerable':true,'writable':true,'value':['bar']}
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -238,17 +256,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils-property-descriptor
+[@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils-property-descriptor/tree/umd
 
-[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/umd
 
-[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils-inherited-keys
+[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils-inherited-keys/tree/umd
 
-[@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils-inherited-property-descriptors
+[@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils-inherited-property-descriptors/tree/umd
 
-[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils-inherited-property-names
+[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils-inherited-property-names/tree/umd
 
-[@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils-inherited-property-symbols
+[@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils-inherited-property-symbols/tree/umd
 
 <!-- </related-links> -->
 
