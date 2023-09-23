@@ -44,7 +44,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import inheritedPropertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-descriptor@deno/mod.js';
+import inheritedPropertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-descriptor@v0.1.0-deno/mod.js';
 ```
 
 #### inheritedPropertyDescriptor( obj, property\[, level] )
@@ -114,7 +114,7 @@ var desc = inheritedPropertyDescriptor( f, 'beep', 1 );
 
 ```javascript
 import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
-import inheritedPropertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-descriptor@deno/mod.js';
+import inheritedPropertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-descriptor@v0.1.0-deno/mod.js';
 
 function Foo() {
     this.beep = 'boop';
