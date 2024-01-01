@@ -35,7 +35,23 @@ limitations under the License.
 
 > Return a property descriptor for an object's inherited property.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-inherited-property-descriptor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -44,7 +60,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import inheritedPropertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-descriptor@deno/mod.js';
+var inheritedPropertyDescriptor = require( '@stdlib/utils-inherited-property-descriptor' );
 ```
 
 #### inheritedPropertyDescriptor( obj, property\[, level] )
@@ -71,7 +87,7 @@ By default, the function walks an object's entire prototype chain. To limit the 
 <!-- eslint-disable id-length -->
 
 ```javascript
-import inherit from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherit@deno/mod.js';
+var inherit = require( '@stdlib/utils-inherit' );
 
 function Bar() {
     return this;
@@ -117,8 +133,8 @@ var desc = inheritedPropertyDescriptor( f, 'beep', 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
-import inheritedPropertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-descriptor@deno/mod.js';
+var defineProperty = require( '@stdlib/utils-define-property' );
+var inheritedPropertyDescriptor = require( '@stdlib/utils-inherited-property-descriptor' );
 
 function Foo() {
     this.beep = 'boop';
@@ -175,7 +191,7 @@ console.log( desc );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -192,7 +208,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -237,17 +253,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils-property-descriptor/tree/deno
+[@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils-property-descriptor
 
-[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/deno
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in
 
-[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils-inherited-keys/tree/deno
+[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils-inherited-keys
 
-[@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils-inherited-property-descriptors/tree/deno
+[@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils-inherited-property-descriptors
 
-[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils-inherited-property-names/tree/deno
+[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils-inherited-property-names
 
-[@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils-inherited-property-symbols/tree/deno
+[@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils-inherited-property-symbols
 
 <!-- </related-links> -->
 
